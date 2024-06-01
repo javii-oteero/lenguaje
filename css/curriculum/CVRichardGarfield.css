@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfd4d6;
+  background-image: url(../../img/curriculum/CVRichardGarfield/fondo_magic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.folio {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  background-color:#f1e8d9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%
+}
+
+#foto {
+  width: 250px;
+  height: 250px;
+  margin-right: 0px;
+  margin-left: 70px;
+  float: left;
+  display: flex;
+  position:absolute;
+  margin-bottom: 500px;
+}
+
+#nombre {
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content:center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: salmon;
+  text-shadow: 2px 4px rgb(51, 47, 47);
+  -webkit-text-stroke: 2px black;
+}
+
+#contacto{
+  margin-left: 300px;
+  display: grid;
+  place-content: center;
+  position: absolute;
+}
+
+h2 {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type:disc;
+  padding: 10 px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+fieldset{
+  margin-bottom: 10px;
+}
+
+#experiencia{
+  margin-top: 270px;
+}
+
+
+
+legend{
+  border: solid salmon;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 10px;
+}

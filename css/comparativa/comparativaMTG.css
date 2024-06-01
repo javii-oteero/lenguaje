@@ -1,0 +1,111 @@
+body{
+    margin-top: 100px;
+    padding: 0;
+    background-image: url(../../img/comparativa/comparativaMTG/fondo-fe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.bottom{
+    color: azure;
+    text-shadow: black 3px 3px 6px;
+
+}
+
+@font-face {
+    font-family: Yugi-font;
+    src: url(../../font/comparativa/comparativaMTG/Matrix\ II\ Regular.otf);
+}
+
+@font-face {
+    font-family: MTG-font;
+    src: url(../../font/comparativa/comparativaMTG/Beleren2016-Bold.ttf);
+}
+
+hr{
+    width: 100%;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: black 3px 3px 6px;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+span{
+    color: blue;
+}
+
+.yugioh{
+    font-family: Yugi-font;
+}
+
+.MTG{
+    font-family: MTG-font;
+}
+
+.container_padre{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.carta{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 20%; 
+    right: 0; 
+    left: 1%;
+    margin: 0 auto; 
+    display: none;
+    border-radius: 20px 20px 20px 20px;
+    width: 25%;
+    height: 70%;
+    box-shadow: 1px 12px 33px black;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.hijos{
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: rgb(96, 81, 81) 5px 5px 5px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: azure;
+    transition: all ease 0.2s;
+    width: 10%;
+
+}
+
+.logo{
+    width: 5vh;
+}

@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(rgb(31, 27, 82) 0%, rgba(69,9,121,0.6867121848739496) 100%) no-repeat fixed;
+}
+
+header{
+    text-align: center;
+    color:#fff;
+    text-shadow: 0 10px 15px rgba(0,0,0,.2);
+    font-size: 20px;
+}
+
+#marcador{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+p{
+    text-transform: uppercase;
+    text-shadow: white 2px 1px 4px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    text-shadow: none;
+}
+
+.game_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.player{
+    width: fit-content;
+    max-width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    flex: 1 1 0;
+    margin: 5vw;
+    background-color: #a8a6a6b6;
+    box-shadow: black 2px 2px 2px;
+}
+
+.resultados{
+    width: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.container_dados{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 4px;
+    justify-content: center;
+}
+
+#container_dados1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 4px;
+}
+
+.dado{
+    width: 12vh;
+    max-height: min-content;
+    border: solid black 2px;
+}
+
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,131 @@
+body{
+    background:linear-gradient(45deg, blueviolet, lightgreen);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header{
+    text-align: center;
+    color:#fff;
+    text-shadow: 0 10px 15px rgba(0,0,0,.2);
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #824caf;
+    color: white;
+    border: solid black 1px;
+    text-shadow: black 1px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7545a0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#fallos {
+    border: solid black 1px;
+    text-shadow: black 1px 1px;
+    color: white;
+    border-radius: 5px;
+    background-color: #824caf;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#winner{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.contenedor_juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+
+.pantalla_juego{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 5px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.dorso_magic {
+    width: 17vh;
+    height: 24vh;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.front_magic {
+    width: 17vh;
+    height: 24vh;
+    border-radius: 10px;
+}
+
+/*COOKIES*/
+.aviso-cookies {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.aviso-cookies form {
+    display: inline-block;
+}
+
+.aviso-cookies label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aviso-cookies button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.aviso-cookies button:hover {
+    background-color: #0056b3;
+}
+
+#adminCookies{
+    visibility: hidden;
+}

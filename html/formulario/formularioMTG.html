@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Formulario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../../css/formulario/formularioMTG.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="div_padre">
+      <div class="formulario">
+        <h2>Formulario</h2>
+        <form>
+          <div class="input">
+            <input type="text" required="">
+            <label>Nombre</label>
+          </div>
+          <div class="input">
+            <input type="text" required="">
+            <label>Apellidos</label>
+          </div>
+          <div class="input">
+            <input type="date" id="fecha">
+            <label>Fecha de nacimiento</label>
+          </div>
+          <div class="input">
+            <input type="email" required="">
+            <label>Correo electrónico</label>
+          </div>
+          <div class="input">
+            <input type="text" required="">
+            <label>Dirección</label>
+          </div>
+          <div class="input">
+            <input type="number" required="" onKeyPress="if(this.value.length==5) return false;">
+            <label>Código postal</label>
+          </div>
+          <div class="input">
+            <input type="number" required="" onKeyPress="if(this.value.length==9) return false;">
+            <label>Teléfono</label>
+          </div>
+          <div >
+            <input type="checkbox">
+            <label>Acepto el uso de cookies</label>
+          </div>
+          <br>
+          <div>
+            <input type="radio" name="pago">
+            <label>Visa</label>
+            <input type="radio" name="pago">
+            <label>Mastercard</label>
+            <input type="radio" name="pago">
+            <label>Paypal</label>
+          </div>
+          <a href="#">
+            Enviar datos
+          </a>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Trabajo hecho por Javier Otero
+  </footer>
+</body>
+</html>

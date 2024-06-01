@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal MTG</title>
+    <link rel="stylesheet" href="../../css/paginaPrincipal/paginaPrincipalMTG.css">
+    <link rel="shortcut icon" href="../../img/juego/juegoMTG/icono_mtg.ico" />
+
+</head>
+<body>
+  <header>
+  <a name="top"></a>
+  <div class="navegacion">
+    <nav class="menu">
+      <ul>
+        <li class="li_nav"><a href="#top">Inicio</a></li>
+        <li class="li_nav"><a href="#">Trabajos &dtrif;</a>
+          <ul>
+            <li class="li_nav2"><a href="../../html/escala/EscalaMTG.html" target="_blank">Escala</a></li>
+            <li class="li_nav2"><a href="../../html/comparativa/comparativaMTG.html" target="_blank">Comparativa</a></li>
+            <li class="li_nav2"><a href="../../html/curriculum/CVRichardGarfield.html" target="_blank">Curriculum</a></li>
+            <li class="li_nav2"><a href="../../html/frase/FraseMTG.html" target="_blank">Frase</a></li>
+          </ul>
+        </li>
+        <li class="li_nav"><a href="../../html/reseña/reseñaMTG.html" target="_blank">Reseñas</a></li>
+        <li class="li_nav"><a href="../../html/dados/dadosJavi.html" target="_blank">Jugar a los dados</a></li>
+      </ul>
+    </nav>
+    <img src="../../img/paginaPrincipal/landingMTG/mtglogo.png" class="mtg_logo">
+    <div class="redes">
+      <a id= "insta" href="https://instagram.com/wizards_magic" target="_blank"><img class="img_redes" src="../../img/paginaPrincipal/landingMTG/instalogo.png"></a>
+      <a href="https://twitter.com/wizards_magic" target="_blank"><img class="img_redes" src="../../img/paginaPrincipal/landingMTG/xlogo.png"></a>
+      <a href="https://youtube.com/channel/UC8ZGymAvfP97qJabgqUkz4A" target="_blank"><img class="img_redes" src="../../img/paginaPrincipal/landingMTG/ytlogo.png"></a>
+    </div>
+  </div>
+  <section class="header_imagenes">
+    <div class="slider">
+      <div class="slide">
+        <input type="radio" name="boton_radio" id="radio1" onclick="updateCounter(1)">
+        <input type="radio" name="boton_radio" id="radio2" onclick="updateCounter(2)">
+        <input type="radio" name="boton_radio" id="radio3" onclick="updateCounter(3)">
+        <input type="radio" name="boton_radio" id="radio4" onclick="updateCounter(4)">
+        <input type="radio" name="boton_radio" id="radio5" onclick="updateCounter(5)">
+
+        <div class="st first">
+          <img src="../../img/paginaPrincipal/landingMTG/lotr.jpg" alt="">
+        </div>
+        <div class="st">
+          <img src="../../img/paginaPrincipal/landingMTG/ajani.jpg" alt="">
+        </div>
+        <div class="st">
+          <img src="../../img/paginaPrincipal/landingMTG/elspeth.jpg" alt="">
+        </div>
+        <div class="st">
+          <img src="../../img/paginaPrincipal/landingMTG//jace.jpg" alt="">
+        </div>
+        <div class="st">
+          <img src="../../img/paginaPrincipal/landingMTG/nicol_bolas.jpg" alt="">
+        </div>
+
+        <div class="nav_auto">
+          <div class="a-b1"></div>
+          <div class="a-b2"></div>
+          <div class="a-b3"></div>
+          <div class="a-b4"></div>
+          <div class="a-b5"></div>
+        </div>
+      </div>
+
+      <div class="nav_manual">
+        <label for="radio1" class="m-btn" onclick="updateCounter(1)"></label>
+        <label for="radio2" class="m-btn" onclick="updateCounter(2)"></label>
+        <label for="radio3" class="m-btn" onclick="updateCounter(3)"></label>
+        <label for="radio4" class="m-btn" onclick="updateCounter(4)"></label>
+        <label for="radio5" class="m-btn" onclick="updateCounter(5)"></label>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="../../js/paginaPrincipal/paginaPrincipalMTG.js"></script>
+  </header>
+  <main>
+    <aside class="aside_izquierdo">
+      <section class="container_iframe">
+        <iframe class="video_magic" src="https://www.youtube.com/embed/NHpOagQrLp0?si=dynybBWgdWWlnAjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <section class="locator">
+        <button class = "btn_locator" onclick="window.open('https:/locator.wizards.com/', '_blank')">ENCUENTRA TU TIENDA MÁS CERCANA</button>
+        <hr id="separador_enlaces">
+        <button class = "btn_locator" onclick="window.open('https:/www.cardmarket.com/es/Magic', '_blank')">COMPRA CARTAS EN CARDMARKET</button>
+      </section>
+      <section class="ad">
+        <a href="https://www.youtube.com/watch?v=rUDEX3MkRXY" target="_blank"><img src="../../img/paginaPrincipal/landingMTG/add.gif" alt=""></a>
+      </section>
+    </aside>
+    
+    <article class="articulo">
+      Magic: The Gathering (MTG) ha mantenido su lugar como uno de los juegos de cartas coleccionables más icónicos y
+      duraderos desde su lanzamiento en 1993. Desarrollado por Wizards of the Coast, este juego ha cautivado a millones de
+      jugadores en todo el mundo con su combinación única de estrategia, habilidad y narrativa envolvente.
+      
+      <h3>Orígenes</h3>
+      
+      El cerebro detrás de Magic: The Gathering es Richard Garfield, un matemático y diseñador de juegos. Garfield ideó el
+      juego como una forma de combinar su amor por la estrategia y la fantasía. Desde entonces, Magic ha evolucionado
+      enormemente con cada conjunto de cartas que se lanza, añadiendo nuevas mecánicas, historias y personajes a su vasto
+      universo.
+      
+      <h3>El juego</h3>
+      
+      Magic: The Gathering se juega entre dos o más jugadores, cada uno representado como un "planeswalker". Cada jugador
+      construye su mazo de cartas a partir de un conjunto diverso y expansivo, utilizando criaturas, hechizos y tierras para
+      derrotar a su oponente. La profundidad estratégica del juego ha llevado a la formación de comunidades apasionadas y
+      competiciones a nivel mundial.
+      
+      <h3>Coleccionismo</h3>
+      
+      Una de las características distintivas de Magic es su naturaleza coleccionable. Cada conjunto de cartas presenta
+      ilustraciones únicas y, en algunos casos, rarezas extremadamente valiosas. Los jugadores pueden intercambiar, comprar y
+      vender cartas para mejorar y personalizar sus mazos. Este aspecto coleccionable ha contribuido a la longevidad del
+      juego, ya que los jugadores siempre buscan nuevas adiciones a sus colecciones.
+      
+      <h3>Eventos y torneos</h3>
+      
+      Magic: The Gathering ha generado una escena competitiva vibrante, con eventos y torneos que atraen a jugadores de todas
+      las edades y niveles de habilidad. Desde torneos locales hasta campeonatos mundiales, la comunidad de Magic ofrece
+      oportunidades para que los jugadores demuestren su destreza estratégica y construyan relaciones con otros entusiastas
+      del juego.
+      
+      Adaptaciones Digitales:
+      
+      A medida que la tecnología avanzaba, Magic también se expandió al mundo digital. Plataformas como Magic: The Gathering
+      Arena permiten a los jugadores disfrutar del juego en línea, competir con jugadores de todo el mundo y experimentar
+      nuevas formas de jugar.
+      </article>
+    <aside class="aside_derecho">
+      <section class="container_iframe" id="iframe_juego">
+        <iframe src="../juego/juegoMTG.html" frameborder="0" scrolling="no"></iframe>
+      </section>
+      <form>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span></input>
+          <label class="label_login">Usuario</label>
+        </div>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span>
+          <label class="label_login">Contraseña</label>
+        </div>
+        <button type="button" class="button buttonBlue">Login
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+        <button type="button" class="button buttonRed" onclick="window.open('../formulario/formularioMTG.html')">Register
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button>
+      </form>
+      <section class="contador">
+        <p>VISITAS DE LA PÁGINA</p>
+        <div id="sfcsdez4c83jcujf3rznreh7yagazhfngk4"></div><script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=sdez4c83jcujf3rznreh7yagazhfngk4&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter11.optistats.ovh/private/contadorvisitasgratis.php?c=sdez4c83jcujf3rznreh7yagazhfngk4" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
+      </section>
+
+    </aside>
+  </main>
+  <footer>
+    <p>Sopacasera ®</p>
+</footer>
+</body>
+</html>

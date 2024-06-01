@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MTGFont;
+    src: url(../../font/escala/EscalaMTG/Beleren2016-Bold.ttf);
+}
+
+body{
+    height: 100vh;
+    background-color: beige;
+    background-image: url(../../img/escala/EscalaMTG/fondo_magic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#containerPadre{
+    width: 40%;
+    min-width: 590px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    right: 50%;
+}
+
+.container{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background: beige;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+}
+
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+}
+
+h2{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+    font-family: MTGFont;
+}
+
+.section:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position:relative;
+    border:1px solid black;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px ;
+    background: linear-gradient(450deg, green, red);
+}
+
+
+#pauper-menu{
+    animation: pauper-barra 2s forwards;
+}
+
+@keyframes pauper-barra{
+    100%{
+        width: 3%;
+    }
+}
+
+#estandar-menu{
+    animation: estandar-barra 2s forwards;
+}
+
+@keyframes estandar-barra{
+    100%{
+        width: 15%;
+    }
+}
+
+#pioneer-menu{
+    animation: pioneer-barra 2s forwards;
+}
+
+@keyframes pioneer-barra{
+    100%{
+        width: 17.5%;
+    }
+}
+
+#commander-menu{
+    animation: commander-barra 2s forwards;
+}
+
+@keyframes commander-barra{
+    100%{
+        width: 30%;
+    }
+}
+
+#modern-menu{
+    animation: modern-barra 2s forwards;
+}
+
+@keyframes modern-barra{
+    100%{
+        width: 50%;
+    }
+}
+
+#legacy-menu{
+    animation: legacy-barra 2s forwards;
+}
+
+@keyframes legacy-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#legacy-menu2{
+    animation: legacy-barra2 2s forwards;
+}
+
+@keyframes legacy-barra2{
+    100%{
+        width: 100%;
+    }
+}
+
+
+footer{
+    padding: 1em;
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: beige;
+    border-radius: 25px ;
+    border: solid black;
+
+}

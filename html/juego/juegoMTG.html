@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/juego/juegoMTG/icono_mtg.ico" />
+    <link rel="stylesheet" href="../../css/juego/juegoMTG.css">
+    <title>JUEGO MTG</title>
+</head>
+<body onload="start()">
+    <header>
+        <h1>MTG THE GAME</h1>
+    </header>
+    <main>
+        <section class="contenedor_juego">
+            <div class="menu">
+                <nav>
+                    <button onclick="location.reload()" id="reiniciar">REINICIAR PARTIDA</button>
+                </nav>
+                <div id="fallos">FALLOS: 0</div>
+            </div>
+            <div id="winner">
+                <img src="../../img/juego/juegoMTG/cat-dance.gif" alt="">
+            </div>
+            <div class="pantalla_juego">
+                <div class="carta" id="carta1" onclick="reveal(1)">
+                        
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img1">
+                    </div>
+                    
+                </div>
+                <div class="carta" id="carta2" onclick="reveal(2)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img2">
+                    </div>
+                </div>
+                <div class="carta" id="carta3" onclick="reveal(3)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img3">
+                    </div>
+                </div>
+                <div class="carta" id="carta4" onclick="reveal(4)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img4">
+                    </div>
+                </div>
+                <div class="carta" id="carta5" onclick="reveal(5)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img5">
+                    </div>
+                </div>
+                <div class="carta" id="carta6" onclick="reveal(6)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img6">
+                    </div>
+                </div>
+                <div class="carta" id="carta7" onclick="reveal(7)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img7">
+                    </div>
+                </div>
+                <div class="carta" id="carta8" onclick="reveal(8)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img8">
+                    </div>
+                </div>
+                <div class="carta" id="carta9" onclick="reveal(9)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img9">
+                    </div>
+                </div>
+                <div class="carta" id="carta10" onclick="reveal(10)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img10">
+                    </div>
+                </div>
+                <div class="carta" id="carta11" onclick="reveal(11)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img11">
+                    </div>
+                </div>
+                <div class="carta" id="carta12" onclick="reveal(12)">
+                    <div class="back">
+                        <img src="../../img/juego/juegoMTG/back_magic.jpg" class="dorso_magic">
+                    </div>
+                    <div class="front">
+                        <img src="" class="front_magic" id="img12">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="avisoCookies" class="aviso-cookies">
+        <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario.</p>
+        <form id="cookiesForm">
+            <button type="submit">Permitir</button>
+            <button type="submit" onclick="close_window()">Denegar</button>
+            <button type="button" onclick="visibleAdministrar()">Administrar</button>
+        </form>
+    </div>
+    <div id="adminCookies" class="aviso-cookies">
+        <form id="cookiesForm2">
+            <p>Marque o desmarque su preferencia de cookies</p>
+            <label><input type="checkbox" name="cookiesAnaliticas"> Cookies Analíticas</label>
+            <label><input type="checkbox" name="cookiesPublicitarias"> Cookies Publicitarias</label>
+            <label><input type="checkbox" disabled checked name="cookiesPersonalizadas"> Cookies Necesarias</label>
+            <button type="submit" onclick="aceptar()">Confirmar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Sopacasera ®</p>
+    </footer>
+    <script src="../../js/juego/juegoMTG.js"></script>
+</body>
+</html>

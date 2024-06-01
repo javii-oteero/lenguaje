@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam no vayas</title>
+    <link rel="stylesheet" href="../../css/samvalentin/JavierOtero.css">
+</head>
+<body>
+    <section class="header_imagenes">
+        <div class="slider">
+          <div class="slide_auto">
+            <input type="radio" name="boton_radio" id="radio1">
+            <input type="radio" name="boton_radio" id="radio2">
+            <input type="radio" name="boton_radio" id="radio3">
+            <input type="radio" name="boton_radio" id="radio4">
+            <input type="radio" name="boton_radio" id="radio5">
+            <input type="radio" name="boton_radio" id="radio6">
+    
+            <div class="st first">
+              <img src="../../img/samvalentin/samJavi/sam_renfe.jpg" alt="">
+            </div>
+            <div class="st">
+              <img src="../../img/samvalentin/samJavi/sam_andorra.jpg" alt="">
+            </div>
+            <div class="st">
+              <img src="../../img/samvalentin/samJavi/sam_nieve.jpg" alt="">
+            </div>
+            <div class="st">
+              <img src="../../img/samvalentin/samJavi/sam_peleao.jpg" alt="">
+            </div>
+            <div class="st">
+              <img src="../../img/samvalentin/samJavi/sam_pokemon.jpg" alt="">
+            </div>
+            <div class="st">
+              <img src="../../img/samvalentin/samJavi/sam_vision.jpg" alt="">
+            </div>
+    
+            <div class="nav_auto">
+              <div class="a-b1"></div>
+              <div class="a-b2"></div>
+              <div class="a-b3"></div>
+              <div class="a-b4"></div>
+              <div class="a-b5"></div>
+              <div class="a-b6"></div>
+            </div>
+          </div>
+    
+          <div class="nav_manual">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio2" class="m-btn"></label>
+            <label for="radio3" class="m-btn"></label>
+            <label for="radio4" class="m-btn"></label>
+            <label for="radio5" class="m-btn"></label>
+            <label for="radio6" class="m-btn"></label>
+          </div>
+        </div>
+      </section>
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked=true;
+          counter++;
+          if(counter > 6){
+            counter = 1;
+          }
+        },5000);
+      </script>
+</body>
+</html>

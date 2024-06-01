@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Dialogo;
+    src: url("../../font/dialogo/DialogoMTG/Enchanted\ Land.otf");
+}
+
+@font-face {
+    font-family: DialogoDerecha;
+    src: url("../../font/dialogo/DialogoMTG/Planewalker-38m6.ttf");
+}
+
+.bocadillo {
+    font-family: Dialogo;
+    margin-left: 3%;
+    position: relative;
+    width: 40%;
+    background: white;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    height: auto;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 1px 1px 1px 1px;
+}
+
+.bocadillo:before {
+    border: 20px solid white;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -40px;
+    left: calc(5%);
+}
+
+.bocadillo_right {
+    font-family: DialogoDerecha;
+    margin-left: 55%;
+    position: relative;
+    width: 40%;
+    background: rgb(208, 208, 208);
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+    height: auto;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 15px 30px 15px 30px;
+}
+
+.bocadillo_right:before {
+    border: 20px solid rgb(208, 208, 208);
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -40px;
+    right: calc(10%);
+}
+
+body{
+    background-color: rgb(85, 85, 190);
+}
+
+@font-face {
+    font-family: MTGFont;
+    src: url(../../font/dialogo/DialogoMTG/Beleren2016-Bold.ttf);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: MTGFont;
+    color: black;
+    text-shadow: white 2px 1px 1px ;
+}
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+img{
+    border-radius: 100px;
+    margin-top: 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#lili{
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding: 5px;
+}
+
+#ajani{
+    margin-left: 85% ;
+    position: relative;
+    width: 110px;
+    height: 100px;
+    padding: 1px;
+}
+
+footer{
+    padding: 1em;
+    position:absolute;
+    bottom: 1;
+
+}
+
+#div_padre{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(69,9,121,0.69) 100%);    display: block;
+    padding: 50px;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30% ;
+    box-shadow: black 5px 5px 100px 5px ;
+    border-radius: 10px 10px 10px 10px;
+}
+
+span{
+    text-decoration: underline;
+    color: blue;
+}
+
+.carta{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    top: 50%; 
+    right: 0; 
+    left: 20%;
+    margin: 0 auto; 
+    display: none;
+    border-radius: 20px 20px 20px 20px;
+    width: 20%;
+    height: 55%;
+    box-shadow: 1px 12px 33px black;
+}
+
+#trampa{
+    right: 40%;
+}

@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(61, 59, 59);
+}
+
+.frase{
+    border-left: white dotted 5px;
+    border-right: red dotted 5px;
+    background: lightblue;
+    padding:20px;
+    text-align:center;
+}
+
+.bordes{
+    border-top: green dashed 5px;
+    border-bottom: black dashed 5px;
+}
+
+
+
+h2{
+    font-size: 30px;
+}
+
+h1{
+    font-style: oblique;
+    color: rgb(44, 23, 23);
+}
+
+.container_images{
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.images{
+    margin: 0 10px
+}
+
+#solring{
+    border-radius: 15px;
+}
+
+footer{
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    text-decoration: underline;
+}

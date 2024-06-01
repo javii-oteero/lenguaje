@@ -1,0 +1,970 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: HarryPotter;
+    src:url(../../font/paginaPrincipal/HARRYP__.TTF);
+}
+
+@font-face{
+    font-family: Dumbledor;
+    src:url(../../font/paginaPrincipal/dum1.ttf);
+}
+
+@font-face{
+    font-family: Dumbledor2;
+    src:url(../../font/paginaPrincipal/dum2.ttf);
+}
+
+@font-face{
+    font-family: Lumos;
+    src:url(../../font/paginaPrincipal/LUMOS.TTF);
+}
+
+@font-face{
+    font-family: Escuela;
+    src:url(../../font/paginaPrincipal/MagicSchoolOne.ttf);
+}
+
+@font-face{
+    font-family: HarrPotter2;
+    src:url(../../font/paginaPrincipal/HanryPotterDemoRegular.ttf);
+}
+
+@font-face{
+    font-family: HarryPotter3;
+    src:url(../../font/paginaPrincipal/harry_potter_and_the_dingbat_font.TTF);
+}
+
+/* ---- Barra 1 ---- */
+header nav.barra1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+    background-image: url(../../img/paginaPrincipal/HarryPotter/header-bg.jpg);
+    overflow: hidden;
+}
+
+/* ---- Icono WB ---- */
+header nav.barra1 .WB {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    justify-content: space-between;
+}
+
+header nav.barra1 .WB .logo {
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    padding: 0 6px;
+    position: relative;
+    transition: background-color .2s;
+    height: 100%;
+}
+
+header nav.barra1 .WB .logo img {
+    width: 30px;
+    height: auto;
+    position: relative;
+}
+
+/* ---- Lenguaje ---- */
+header nav.barra1 .WB .language-selector {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px; 
+}
+
+.language-selector {
+    display: flex;                                             
+    position: relative;
+    margin-right:  79%;
+}
+
+.idioma img {
+    width: 30px;
+    display: inline;
+    margin-right: 0;
+    margin-top: 20%;
+}
+
+button#lenguaje {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff4e2;
+    font-size: 15px;
+}
+
+button#lenguaje:hover {
+    color: #efb810;
+}
+
+/* ---- Redes ---- */
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 5%;
+}
+
+.logo {
+    margin-left: 15px;
+    
+}
+
+
+/* ---- Segunda barrita ---- */
+
+#segundaBarra.subpage {
+    margin-top: 0;
+}
+
+.subpage {
+    background-color: transparent;    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    min-height: 110px;
+    position: relative;
+    float: left;
+}
+
+.subpage2 {
+    background-color: transparent;    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+    min-height: 110px;
+    position: relative;
+    float: right;
+}
+
+nav.ladoIzquierdo {
+    left: 0;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    left: 0;
+    opacity: .2;
+}
+
+nav.ladoIzquierdo img.fondoIzquierdo {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+img {
+    border-style: none;
+}
+
+nav.ladoDerecho {
+    right: 0;
+}
+
+
+nav.ladoDerecho img.fondoDerecho {
+    right: 0;
+    opacity: .2;
+
+}
+
+nav.ladoDerecho img.fondoDerecho {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .2;
+}
+
+
+/*--Menú con Desplegables--*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-family: 'Lumos';
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: rgba(225,182,93,255);
+}
+
+nav ul li a:hover{
+    color: #ffffff;
+}
+
+/* ---- Desplegables ---- */
+nav ul li.desplegables:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+nav ul li .submenu li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- Segundo menú izquierda --- */
+
+nav ul li.desplegables:hover .submenu-izquierda {
+    display: block;
+}
+
+nav ul li .submenu-izquierda {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+}
+
+nav ul li .submenu-izquierda li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+nav ul li .submenu-izquierda li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ---- Segundo menú derecha ----*/
+
+.ladoDerecho ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ladoDerecho li {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    font-family: 'Lumos';
+    font-size: 25px;
+    margin-top: 5%;
+    margin-right: 20px; 
+}
+
+.ladoDerecho li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    color: rgba(225, 182, 93, 255);
+}
+
+.ladoDerecho li a:hover {
+    color: #ffffff;
+}
+
+
+nav ul li.desplegables:hover .submenu-derecha {
+    display: block;
+}
+
+nav ul li .submenu-derecha {
+    display: none;
+    position: absolute;
+    background-color: rgba(25,30,33,255);
+    z-index: 1;
+    
+}
+
+nav ul li .submenu-derecha li {
+    display: block;
+    margin: 5px 0;
+}
+
+nav ul li .submenu-derecha li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ---- Barras doradas ---- */
+.nav-bar.right {
+    right: 0;
+    width: 30%;
+    float: right; 
+    margin-top: 100px;
+    margin-right: -31%;
+
+}
+
+.nav-bar.left {
+    left: 0%;
+    width: 30%;
+    float: left;
+    margin-top: -10px;
+}
+
+
+/* ---- Letras Harry Potter ---- */
+.nav-bar.center {
+    left: 0;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 8%;
+    float: right;
+   
+}
+
+/* ---- Esquinas superiores ---- */
+.esquinitaSuperiorIzquierda {
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: 0;
+}
+
+section#esquinitaSuperiorDerecha img.esquinitaSuperiorDerecha {
+    position: relative; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: -62.9%; 
+} 
+
+/* ---- Body ---- */
+body {
+    background-image: url(../../img/paginaPrincipal/HarryPotter/fondo2.webp);
+    background-repeat: no-repeat;
+    background-color: #181f1f;
+    color: #000000;
+    font-family: sans-serif;  
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+    height: 100%; /* Ajusta el tamaño para que ocupe toda la página */
+}
+
+/* ---- Título ---- */
+.partedearriba {
+    width: 20%;
+    height: 20%;
+    margin-top: 0%;
+    margin-left: 30%;
+}
+
+.textoTitulo{
+    table-layout: auto;
+    font-family: 'Dumbledor';
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-left: 32%;
+    font-size: 40px;
+    height: 100%;
+    margin-top: -2%;
+}
+
+.partedeabajo {
+    width: 20%;
+    height: 100%;
+    margin-left: 40.5%;
+    margin-top: -2%;
+
+}
+
+/* ---- Página Principal ----*/
+
+/* ---- Slider ----*/
+
+#slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px; 
+    margin: 10px auto;
+    overflow: hidden;
+    margin-top: 5vh;
+    
+}
+
+.border {
+    position: absolute;
+    top: 53vh;
+    left: 53vh;
+    z-index: 1; 
+    width: 39.5%;
+    height: 38.5%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.slider img {
+    width: 100%; 
+    height: auto;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    top: 73%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 26%; 
+    transform: translateY(-50%);
+}
+
+#next-btn {
+    right: 26%; 
+    transform: translateY(-50%);
+}
+
+/* ---- Partir la página ----*/
+
+#lado-izquierdo {
+    width: 30%; 
+    float: left; 
+    margin-top: 14vh;
+
+}
+
+#centro {
+    width: 50%; 
+    margin: 7% auto; 
+    background-color: transparent; 
+    margin-left: 30%;
+}
+
+#lado-derecho {
+    width: 30%; 
+    float: right; 
+    margin-top: -137vh;
+}
+
+/*---- Lado derecho ----*/
+
+/*---- Calendario ----*/
+.calendario {
+    background:  #ac926c;
+    width: 80%;
+    color:#fff;
+    max-width: 800px;
+    margin: 1em auto;
+    padding: .5em 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+  
+.calendario_cuadro {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+  
+.textoTitulo {
+    text-align: 20%;
+}
+  
+.mes_prev,
+.mes_prev {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+  
+.mes_prev {
+    margin-right: auto;
+}
+  
+.mes_prev {
+    margin-left: auto;
+}
+  
+.calendar_semana,
+.calendar_fecha {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+ }
+  
+.calendar_mes,
+.calendar_anyo {
+    padding: .5em 1em;
+}
+  
+.calendar_item {
+    text-align: center;
+    line-height: 2;
+}
+
+#calendar {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    
+}
+/*Contador*/
+#sfcm35abbar1w4ufxnwl1qcjn8seqmbmpf4{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+
+/*---- Centro ----*/
+
+.news {
+    margin: 1px auto;
+    width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.fondo{
+    margin-left: 12vh;
+    margin-top: -2.5vh;
+    height: 14vh; 
+  overflow: hidden;
+}
+
+.fondo img {
+    clip-path: inset(0 0 20px 0); 
+    width: 100%; 
+    height: auto; 
+}
+
+.news h2 {
+    width: 80%;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 3.5vw;
+    margin-top: -10vh;
+    margin-left: 2vh;
+    font-family: Dumbledor;
+    color: #ac926c;
+}
+
+.news div {
+    margin: 42px;
+    width: calc(40% - 25px);
+    height: auto;
+    max-height: 425px;
+    overflow-y: scroll; /* Propiedad para que no se vea el texto completo*/
+    margin-left: 1vh;
+    background-color: transparent;
+    margin-top: 3.7vh;
+    font-family: 'Dumbledor2';
+    font-size: 40px;
+    
+}
+
+.news div h3 {
+    position: sticky;
+    top:0;
+    margin-top: -3px;
+    left: 0;
+    background-color: #ac926c;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.frame1,
+.frame2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; 
+}
+
+.frame1 {
+    margin-top: 123vh;
+    margin-left: 53vh;
+    height: 45vh;
+    width: 35vh;
+    transform: rotate(180deg);
+    opacity: .6;
+}
+
+
+.frame2 {
+    margin-top: 123vh;
+    margin-left: 90vh;
+    height: 45vh;
+    width: 35vh;
+    transform: rotate(180deg);
+    opacity: .6;
+    
+}
+
+.quidditch,
+.ministerio {
+  position: relative; 
+  z-index: 0; 
+}
+
+.datos {
+    width: 80%;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 2.5vw;
+    margin-top: -10vh;
+    margin-left: 2vh;
+    font-family: Dumbledor;
+    color: #ac926c;
+}
+
+
+.news div p {
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 50;
+}
+
+.barrita{
+    opacity: .6;
+    width: 75%;
+    margin-left: 3vh;
+
+}
+
+.barrita2{
+    opacity: .6;
+    width: 75%;
+    margin-left: 3vh;
+    margin-top: -2.5vh;
+}
+
+.frame3 {
+    position: relative;
+    margin-top: 2vh;
+    margin-left: 0vh;
+    height: 40vh;
+    width: 73vh;
+    opacity: .6;
+}
+
+.noticia-container {
+    position: relative;
+}
+
+.noticia {
+    position: absolute;
+    top: 189vh;
+    left: 31%;
+    z-index: 2;
+    padding: 10px; 
+    padding-right: 300px;
+}
+
+.reliquias{
+    width: 250px;
+    height: 350px;
+    margin-top: -400px;
+    margin-left: 500px;
+}
+
+
+/*---- Lado izquierdo ----*/
+.image-wrapper {
+    position: relative;
+}
+
+.imagenPrinci2 {
+    position: absolute;
+    top: 105vh;
+    left: 0;
+    width: 27%;
+    height: 28.5%;
+    margin-left: 0.8%;
+}
+
+.imagenPrinci {
+    display: block;
+    width: 45vh;
+    height: 37vh;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.arrow {
+    position: absolute;
+    top: 117vh;
+    left: 13%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3; 
+    width: 6vh;
+    height: 6vh;
+}
+
+
+#video-player {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200vh; 
+    height: 80vh; 
+    max-width: 1000px; 
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    box-shadow: 0 0 80px #e5a224; /* Efecto de sombra */
+    background-color: #000000; /* Fondo negro */
+}
+
+
+#video-player iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.cuadro {
+    margin-top: 10%;
+    width: 46vh;
+    height: 95vh;
+    margin-left: 4%;
+    opacity: .5;
+    z-index: 4;
+    position: relative; /* Asegura que el cuadro tenga un contexto de posición */
+}
+
+.anuncio {
+    width: 42vh;
+    height: 90vh; 
+    margin-top: 8vh; /* Sube la imagen más */
+    margin-left: -44vh;
+    position: absolute; /* Permite superponer la imagen encima del cuadro */
+    z-index: 3; /* Asegúrate de que la imagen de la publicidad esté por encima del cuadro */
+}
+
+
+
+
+/* ----Footer (Esquinas inferiores)----*/
+
+footer {
+    padding: 40px 0 3.5rem;
+    color: #000000;
+    position: relative;
+    margin-top: 20vh;
+}
+
+
+footer .footer-wrap {
+    margin: 0 auto;
+    max-width: 72vw;
+}
+
+footer .logos1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+footer .logos1 img {
+    margin: 0 28px 30px; 
+}
+
+footer .logos1 img.WB {
+    width: 50px; 
+}
+
+footer .logos1 img.avalache {
+    width: auto; 
+    height: 36px; 
+}
+
+footer .logos1 img.wizard {
+    width: 80px; 
+    height: auto; 
+}
+
+footer .logos1 img.portkey {
+    height: auto;
+    width: 80px;
+}
+
+footer .politica {
+    box-sizing: border-box;
+    color: rgb(150, 150, 150);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 9px;
+    font-weight: 300;
+    height: auto; 
+    letter-spacing: .08rem;   
+    line-height: 15px;
+    margin-bottom: 16px; 
+    padding-left: 20px;
+    text-align: left;
+    width: 545px;
+    margin-left: 30%;
+}
+
+footer .politica img.WB2 {
+    height: auto;
+    width: 35px;
+    margin: 0 10px;
+}
+
+footer .politica > div {
+    align-items: center;
+    display: flex;
+    padding-top: 4%;
+}
+
+footer .privacidad {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+
+footer .privacidad a {
+    color: rgb(150, 150, 150);
+    display: inline;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: 15px;
+    letter-spacing: .05rem;
+    margin: 0 10px;
+    opacity: .7;
+    text-decoration: none; 
+    white-space: nowrap;
+}
+
+footer .privacidad a:hover {
+    color: white;
+}
+
+.esquinitaIzquierda{
+    left: 0;
+    float: left;
+    width: 10%;
+    height: 10%;
+    margin-top: 0%;
+    
+}
+
+.esquinitaDerecha{
+    right: 0; 
+    float: right; 
+    width: 10%;
+    height: 10%;
+    margin-right: 0%; 
+    margin-top: 0%;
+    
+}
+
+/*ESTILO COOKIES*/
+
+.aviso-cookies {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../../img/paginaPrincipal/HarryPotter/fondo2.webp);
+    background-repeat: no-repeat;
+    background-color: #181f1f;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(228, 225, 225);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    border-top: solid #b2914f
+}
+
+.aviso-cookies form {
+    display: inline-block;
+}
+
+.aviso-cookies label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aviso-cookies button {
+    background-color: #ac926c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.aviso-cookies button:hover {
+    background-color: #947951;
+}
+
+#adminCookies{
+    visibility: hidden;
+}
+
+

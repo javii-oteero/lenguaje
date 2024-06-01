@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DADOS</title>
+    <link rel="stylesheet" href="../../css/dados/dadosJavi.css">
+</head>
+<body>
+    <header>
+        <h1>UNOS DADOS?</h1>
+    </header>
+    <main>
+        <section class="game_container">
+            <div class="player" id="p1">
+                <h3>JUGADOR 1</h3>
+                <p id="result1"></p>
+            
+                <select id="dados_player1">
+                    <option value="1">1 dado</option>
+                    <option value="2">2 dados</option>
+                    <option value="3">3 dados</option>
+                    <option value="4">4 dados</option>
+                    <option value="5">5 dados</option>
+                    <option value="6">6 dados</option>
+                    <option value="7">7 dados</option>
+                    <option value="8">8 dados</option>
+                    <option value="9">9 dados</option>
+                    <option value="10">10 dados</option>
+                    <option value="11">11 dados</option>
+                    <option value="12">12 dados</option>
+                </select>
+                <div class="container_dados" id="container_dados1">
+                    <div class="suma1"></div>
+                </div>
+            </div>
+
+            <div class="resultados">
+                <p>MARCADOR</p>
+                <p id="marcador">0 : 0</p>
+                <button class="button-56" role="button" onclick="lanzar()">LANZAR</button>
+            </div>
+
+            <div class="player" id="p2">
+                <h3>JUGADOR 2</h3>
+                <p id="result2"></p>
+                <select id="dados_player2">
+                    <option value="1">1 dado</option>
+                    <option value="2">2 dados</option>
+                    <option value="3">3 dados</option>
+                    <option value="4">4 dados</option>
+                    <option value="5">5 dados</option>
+                    <option value="6">6 dados</option>
+                    <option value="7">7 dados</option>
+                    <option value="8">8 dados</option>
+                    <option value="9">9 dados</option>
+                    <option value="10">10 dados</option>
+                    <option value="11">11 dados</option>
+                    <option value="12">12 dados</option>
+                </select>
+                <div class="container_dados" id="container_dados2">
+                    <div class="suma2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Sopacasera ®</p>
+    </footer>
+    <script src="../../js/dados/dadosJavi.js"></script>
+</body>
+</html>

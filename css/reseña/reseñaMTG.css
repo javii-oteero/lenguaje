@@ -1,0 +1,71 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,9,121,0.6867121848739496) 100%);
+}
+
+h1{
+    color: white;
+    text-shadow: black 1px 1px 5px;
+}
+
+header{
+    text-align: center;
+
+}
+
+.div_padre{
+    margin-right: 200px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    height: 400px;
+    align-content: center;
+    padding: 10%;
+}
+
+.cita{
+    border: violet solid;
+    box-sizing:border-box;
+    width: 150%;
+    height: fit-content;
+    padding: 20px;
+    background: rgb(238,174,202);
+    background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.cita::first-letter{
+    font-size: 190%;
+}
+
+#cita1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#cita2{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#cita3{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#cita4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#cita5{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+footer{
+    color: white;
+    text-shadow: black 1px 1px 5px;
+}
+
